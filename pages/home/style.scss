@@ -10,7 +10,8 @@
   border-radius:  20px;
 }
 
-.main__hero-section {
+.main__hero-section,
+.main__about-section {
   background-image: url('../../assets/images/bg-snow.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -34,6 +35,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 60.5px 0;
+  margin-bottom: 60px;
 }
 
 .main__hero-caption {
@@ -58,4 +60,54 @@
   border-radius: 20px;
   background-color: variables.$color-dark;
   padding: 20px 32px;
+}
+
+.main__about-section {
+  padding-bottom: 60px;
+}
+
+.main__about-content {
+  display: flex;
+  flex: 1 0 0;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.main__about-text-block {
+  flex-grow: 1;
+  padding: 0 60px;
+  display: flex;
+}
+
+.main__about-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  max-width: 426px;
+}
+
+.main__about-caption {
+  @extend %caption;
+  margin: 0;
+}
+
+.main__about-header {
+  @extend %header-2;
+  letter-spacing: 4.64px;
+  margin: 0;
+}
+
+.main__about-text {
+  @extend %paragraph;
+  margin: 0;
+}
+
+.main__about-image {
+  border-radius: 20px;
+}
+
+.main__about-image-container {
+  border-right: 20px;
+  max-height: 528px;
 }

@@ -201,6 +201,24 @@ summary {
   text-transform: uppercase;
 }
 
+.main__about-header {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 152%; /* 36.48px */
+  letter-spacing: 3.84px;
+  text-transform: uppercase;
+}
+
+.main__about-text {
+  font-family: "Monserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 148%; /* 23.68px */
+}
+
 .main__hero-link, .header__company-text, .header__nav-link {
   font-family: "Monserrat", sans-serif;
   font-size: 12px;
@@ -211,7 +229,7 @@ summary {
   text-transform: uppercase;
 }
 
-.main__hero-caption {
+.main__hero-caption, .main__about-caption {
   font-family: "Allura", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -279,7 +297,8 @@ summary {
   border-radius: 20px;
 }
 
-.main__hero-section {
+.main__hero-section,
+.main__about-section {
   background-image: url("../../assets/images/bg-snow.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -303,6 +322,7 @@ summary {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 60.5px 0;
+  margin-bottom: 60px;
 }
 
 .main__hero-caption {
@@ -324,6 +344,53 @@ summary {
   border-radius: 20px;
   background-color: #181c29;
   padding: 20px 32px;
+}
+
+.main__about-section {
+  padding-bottom: 60px;
+}
+
+.main__about-content {
+  display: flex;
+  flex: 1 0 0;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.main__about-text-block {
+  flex-grow: 1;
+  padding: 0 60px;
+  display: flex;
+}
+
+.main__about-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  max-width: 426px;
+}
+
+.main__about-caption {
+  margin: 0;
+}
+
+.main__about-header {
+  letter-spacing: 4.64px;
+  margin: 0;
+}
+
+.main__about-text {
+  margin: 0;
+}
+
+.main__about-image {
+  border-radius: 20px;
+}
+
+.main__about-image-container {
+  border-right: 20px;
+  max-height: 528px;
 }
 
 /*# sourceMappingURL=style.css.map */
