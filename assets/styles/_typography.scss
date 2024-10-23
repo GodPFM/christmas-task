@@ -1,0 +1,87 @@
+@use './fonts';
+
+%header-1 {
+  font-family: Montserrat, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 48px */
+  letter-spacing: 5.76px;
+  text-transform: uppercase;
+}
+
+%header-2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 152%; /* 36.48px */
+  letter-spacing: 3.84px;
+  text-transform: uppercase;
+}
+
+%header-3 {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 152%; /* 24.32px */
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+}
+
+%header-4 {
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 15.6px */
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+%paragraph {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 148%; /* 23.68px */
+}
+
+%action-lg {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 152%; /* 36.48px */
+  letter-spacing: 3.84px;
+  text-transform: uppercase;
+}
+
+%action-sm {
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 15.6px */
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+%caption {
+  font-family: Allura, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 24px */
+  letter-spacing: 1.2px;
+}
+
+%slider-text {
+  font-family: Montserrat, sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}

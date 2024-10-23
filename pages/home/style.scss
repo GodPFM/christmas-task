@@ -1,0 +1,7 @@
+@use '../../assets/styles/modern-normalize';
+@use '../../assets/styles/variables';
+@use '../../assets/styles/typography';
+
+.header__test {
+  @extend %header-1;
+}
