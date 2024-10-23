@@ -1,0 +1,58 @@
+@use './typography';
+@use './variables';
+
+.header {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__company-name {
+  text-decoration: none;
+  color: variables.$color-dark;
+  display: flex;
+  padding: 8px 20px;
+  align-items: center;
+}
+
+.header__company-logo {
+  width: 24px;
+  height: 24px;
+  background-image: url('/assets/images/snowflake.svg');
+  margin-right: 8px;
+}
+
+.header__company-text {
+  @extend %action-sm;
+}
+
+.header__nav-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.header__nav-item {
+  list-style: none;
+  margin-bottom: 3px;
+}
+
+.header__nav-link {
+  @extend %action-sm;
+  padding: 12px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: variables.$color-dark;
+  transition: background-color 0.3s ease-in;
+}
+
+.header__nav-link:hover {
+  background: variables.$color-primary-10;
+}
+
+
