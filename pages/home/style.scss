@@ -8,10 +8,12 @@
 .main {
   background-color: variables.$color-primary;
   border-radius:  20px;
+  overflow: hidden;
 }
 
 .main__hero-section,
-.main__about-section {
+.main__about-section,
+.main__slider-section {
   background-image: url('../../assets/images/bg-snow.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -35,7 +37,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 60.5px 0;
-  margin-bottom: 60px;
+  @media screen and (min-width: 1570px)  {
+    background-size: contain;
+  }
 }
 
 .main__hero-caption {
@@ -47,9 +51,8 @@
 .main__hero-header {
   @extend %header-1;
   text-align: center;
+  letter-spacing: 5.56px;
   margin: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
   color: #fff;
 }
 
@@ -94,7 +97,6 @@
 
 .main__about-header {
   @extend %header-2;
-  letter-spacing: 4.64px;
   margin: 0;
 }
 
@@ -110,4 +112,97 @@
 .main__about-image-container {
   border-right: 20px;
   max-height: 528px;
+}
+
+.main__slider-section {
+  background-position: 0 -56px;
+}
+
+.main__about-wrapper {
+  padding-top: 60px;
+}
+
+.main__about-section {
+   background-position: -58px 0;
+ }
+
+.main__slider-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.main__slider-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main__slider-caption {
+  @extend %caption;
+  color: #fff;
+  margin: 0;
+}
+
+.main__slider-header {
+  @extend %header-2;
+  color: #fff;
+  margin: 0;
+}
+
+.main__slider-block {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.main__slider-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.main__slider-item-image-block {
+  width: 200px;
+  height: 200px;
+}
+
+.main__slider-item-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.main__slider-item-text {
+  @extend %slider-text;
+  margin: 0;
+  color: #fff;
+}
+
+.main__slider-controls {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.main__slider-control {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid variables.$color-static-white;
+}
+
+.main__slider-control-arrow {
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  mask: url("../../assets/icons/arrow-left.svg");
+  &--right {
+    transform: rotate(180deg);
+  }
 }
