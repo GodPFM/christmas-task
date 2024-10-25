@@ -4,6 +4,7 @@
 @use '../../assets/styles/wrappers';
 @use '../../assets/styles/header';
 @use '../../assets/styles/fonts';
+@use '../../assets/styles/card';
 
 .main {
   background-color: variables.$color-primary;
@@ -13,7 +14,8 @@
 
 .main__hero-section,
 .main__about-section,
-.main__slider-section {
+.main__slider-section,
+.main__gifts-section {
   background-image: url('../../assets/images/bg-snow.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -131,7 +133,8 @@
   padding-bottom: 60px;
 }
 
-.main__slider-text-block {
+.main__slider-text-block,
+.main__gifts-text-block {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -140,13 +143,15 @@
   margin-bottom: 20px;
 }
 
-.main__slider-caption {
+.main__slider-caption,
+.main__gifts-caption {
   @extend %caption;
   color: #fff;
   margin: 0;
 }
 
-.main__slider-header {
+.main__slider-header,
+.main__gifts-header {
   @extend %header-2;
   color: #fff;
   margin: 0;
@@ -188,6 +193,7 @@
 }
 
 .main__slider-control {
+  cursor: pointer;
   width: 56px;
   height: 56px;
   display: flex;
@@ -195,6 +201,23 @@
   align-items: center;
   border-radius: 20px;
   border: 1px solid variables.$color-static-white;
+
+  &:hover {
+    background-color: #fff;
+
+    & > .main__slider-control-arrow {
+      background-color: variables.$color-primary;
+    }
+  }
+
+  &.inactive {
+    cursor: not-allowed;
+    background-color: transparent;
+    border: 1px solid variables.$color-static-white-40;
+    & > .main__slider-control-arrow {
+      background-color: variables.$color-static-white-40;
+    }
+  }
 }
 
 .main__slider-control-arrow {
@@ -205,4 +228,42 @@
   &--right {
     transform: rotate(180deg);
   }
+}
+
+.main__gifts-section {
+  background-position: 0 -24px;
+}
+
+.main__gifts-content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.main__gifts-cards-block {
+  display: flex;
+  gap: 12px;
+}
+
+.main__gifts-card {
+  @extend %card__container;
+}
+
+.main__gifts-card-image-block {
+  @extend %card__image-block;
+}
+
+.main__gifts-card-image {
+  @extend %card__image;
+}
+
+.main__gifts-card-text-content {
+  @extend %card__text-content;
+}
+
+.main__card-header-purpose {
+  @extend %card__header-purpose;
+}
+
+.main__card-header-name {
+  @extend %card__header-name;
 }

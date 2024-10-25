@@ -1,0 +1,50 @@
+@use './variables';
+@use './typography';
+
+%card__container {
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  height: 342px;
+  border-radius: 20px;
+  background-color: #ecf3f8;
+}
+
+%card__image-block {
+  width: 310px;
+  height: 230px;
+}
+
+%card__image {
+  width: 100%;
+  height: 100%;
+}
+
+%card__text-content {
+  background-color: variables.$color-static-white;
+  flex-grow: 1;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+%card__header-purpose {
+  @extend %header-4;
+  margin: 0 0 8px;
+
+  &.work {
+    color: variables.$color-tag-purple;
+  }
+
+  &.health {
+    color: variables.$color-tag-green;
+  }
+
+  &.harmony {
+    color: variables.$color-tag-pink;
+  }
+}
+
+%card__header-name {
+  @extend %header-3;
+  margin: 0;
+}

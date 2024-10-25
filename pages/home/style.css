@@ -201,13 +201,34 @@ summary {
   text-transform: uppercase;
 }
 
-.main__about-header, .main__slider-header {
+.main__about-header, .main__slider-header,
+.main__gifts-header {
   font-family: "Monserrat", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 152%; /* 36.48px */
   letter-spacing: 3.84px;
+  text-transform: uppercase;
+}
+
+.main__card-header-name {
+  font-family: "Monserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 152%; /* 24.32px */
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+}
+
+.main__card-header-purpose {
+  font-family: "Monserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 15.6px */
+  letter-spacing: 0.6px;
   text-transform: uppercase;
 }
 
@@ -229,7 +250,8 @@ summary {
   text-transform: uppercase;
 }
 
-.main__hero-caption, .main__about-caption, .main__slider-caption {
+.main__hero-caption, .main__about-caption, .main__slider-caption,
+.main__gifts-caption {
   font-family: "Allura", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -301,6 +323,49 @@ summary {
   background: rgba(255, 70, 70, 0.1);
 }
 
+.main__gifts-card {
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  height: 342px;
+  border-radius: 20px;
+  background-color: #ecf3f8;
+}
+
+.main__gifts-card-image-block {
+  width: 310px;
+  height: 230px;
+}
+
+.main__gifts-card-image {
+  width: 100%;
+  height: 100%;
+}
+
+.main__gifts-card-text-content {
+  background-color: #fff;
+  flex-grow: 1;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.main__card-header-purpose {
+  margin: 0 0 8px;
+}
+.work.main__card-header-purpose {
+  color: #4361ff;
+}
+.health.main__card-header-purpose {
+  color: #06a44f;
+}
+.harmony.main__card-header-purpose {
+  color: #ff43f7;
+}
+
+.main__card-header-name {
+  margin: 0;
+}
+
 .main {
   background-color: #ff4646;
   border-radius: 20px;
@@ -309,7 +374,8 @@ summary {
 
 .main__hero-section,
 .main__about-section,
-.main__slider-section {
+.main__slider-section,
+.main__gifts-section {
   background-image: url("../../assets/images/bg-snow.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -423,7 +489,8 @@ summary {
   padding-bottom: 60px;
 }
 
-.main__slider-text-block {
+.main__slider-text-block,
+.main__gifts-text-block {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -432,12 +499,14 @@ summary {
   margin-bottom: 20px;
 }
 
-.main__slider-caption {
+.main__slider-caption,
+.main__gifts-caption {
   color: #fff;
   margin: 0;
 }
 
-.main__slider-header {
+.main__slider-header,
+.main__gifts-header {
   color: #fff;
   margin: 0;
 }
@@ -477,6 +546,7 @@ summary {
 }
 
 .main__slider-control {
+  cursor: pointer;
   width: 56px;
   height: 56px;
   display: flex;
@@ -484,6 +554,20 @@ summary {
   align-items: center;
   border-radius: 20px;
   border: 1px solid #fff;
+}
+.main__slider-control:hover {
+  background-color: #fff;
+}
+.main__slider-control:hover > .main__slider-control-arrow {
+  background-color: #ff4646;
+}
+.main__slider-control.inactive {
+  cursor: not-allowed;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.main__slider-control.inactive > .main__slider-control-arrow {
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .main__slider-control-arrow {
@@ -494,6 +578,20 @@ summary {
 }
 .main__slider-control-arrow--right {
   transform: rotate(180deg);
+}
+
+.main__gifts-section {
+  background-position: 0 -24px;
+}
+
+.main__gifts-content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.main__gifts-cards-block {
+  display: flex;
+  gap: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
