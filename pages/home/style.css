@@ -202,7 +202,7 @@ summary {
 }
 
 .main__about-header, .main__slider-header,
-.main__gifts-header {
+.main__gifts-header, .main__cta-header, .main__cta-number {
   font-family: "Monserrat", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -222,7 +222,7 @@ summary {
   text-transform: uppercase;
 }
 
-.main__card-header-purpose {
+.main__cta-timer-header, .main__card-header-purpose {
   font-family: "Monserrat", sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -240,7 +240,8 @@ summary {
   line-height: 148%; /* 23.68px */
 }
 
-.main__hero-link, .header__company-text, .header__nav-link {
+.main__hero-link,
+.main__cta-link, .header__company-text, .header__nav-link {
   font-family: "Monserrat", sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -251,7 +252,7 @@ summary {
 }
 
 .main__hero-caption, .main__about-caption, .main__slider-caption,
-.main__gifts-caption {
+.main__gifts-caption, .main__cta-caption {
   font-family: "Allura", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -375,7 +376,8 @@ summary {
 .main__hero-section,
 .main__about-section,
 .main__slider-section,
-.main__gifts-section {
+.main__gifts-section,
+.main__cta-section {
   background-image: url("../../assets/images/bg-snow.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -418,7 +420,8 @@ summary {
   color: #fff;
 }
 
-.main__hero-link {
+.main__hero-link,
+.main__cta-link {
   text-decoration: none;
   color: #fff;
   border-radius: 20px;
@@ -592,6 +595,76 @@ summary {
 .main__gifts-cards-block {
   display: flex;
   gap: 12px;
+}
+
+.main__cta-section {
+  background-position: -81px -1px;
+}
+
+.main__cta-bg {
+  background-image: url("../../assets/images/bg-forest.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main__cta-content {
+  padding-top: 160px;
+  padding-bottom: 179px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 426px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__cta-header {
+  margin-bottom: 17px;
+  color: #fff;
+}
+
+.main__cta-caption {
+  margin-bottom: 9px;
+  margin-top: 21px;
+  color: #fff;
+}
+
+.main__cta-timer-block {
+  width: 344px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px 12px 12px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+}
+
+.main__cta-number {
+  margin: 0;
+  color: #fff;
+}
+
+.main__cta-timer-item {
+  position: relative;
+  width: 80px;
+  flex-grow: 1;
+}
+.main__cta-timer-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  width: 1px;
+  height: 18px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.main__cta-timer-header {
+  color: #fff;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

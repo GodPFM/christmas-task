@@ -15,7 +15,8 @@
 .main__hero-section,
 .main__about-section,
 .main__slider-section,
-.main__gifts-section {
+.main__gifts-section,
+.main__cta-section {
   background-image: url('../../assets/images/bg-snow.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -58,7 +59,8 @@
   color: #fff;
 }
 
-.main__hero-link {
+.main__hero-link,
+.main__cta-link {
   @extend %action-sm;
   text-decoration: none;
   color: #fff;
@@ -266,4 +268,78 @@
 
 .main__card-header-name {
   @extend %card__header-name;
+}
+
+.main__cta-section {
+  background-position: -81px -1px;
+}
+
+.main__cta-bg {
+  background-image: url('../../assets/images/bg-forest.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main__cta-content {
+  padding-top: 160px;
+  padding-bottom: 179px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 426px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__cta-header {
+  @extend %header-2;
+  margin-bottom: 17px;
+  color: #fff;
+}
+
+.main__cta-caption {
+  @extend %caption;
+  margin-bottom: 9px;
+  margin-top: 21px;
+  color: #fff;
+}
+
+.main__cta-timer-block {
+  width: 344px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px 12px 12px;
+  background-color: variables.$color-static-white-40;
+  border-radius: 20px;
+}
+
+.main__cta-number {
+  @extend %header-2;
+  margin: 0;
+  color: #fff;
+}
+
+.main__cta-timer-item {
+  position: relative;
+  width: 80px;
+  flex-grow: 1;
+  &:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 18px;
+    background-color: variables.$color-static-white-40;
+  }
+}
+
+.main__cta-timer-header {
+  @extend %header-4;
+  color: #fff;
+  margin: 0;
 }
