@@ -24,16 +24,21 @@
   gap: 12px;
   align-items: center;
   width: 32.7%;
+  text-decoration: none;
+  color: variables.$color-dark;
 
   padding: 20px;
   border-radius: 20px;
   background-color: #ECF3F8;
+
+  &:hover {
+    color: variables.$color-primary;
+  }
 }
 
 .footer__card-link {
   @extend %action-lg;
   text-decoration: none;
-  color: variables.$color-dark;
   margin: 0;
 }
 
@@ -59,7 +64,12 @@
 .footer__link-icon {
   width: 24px;
   height: 24px;
+  transition: background-color 0.3s ease-in;
   background-color: variables.$color-dark;
+
+  &:hover {
+    background-color: variables.$color-primary;
+  }
 
   &--telegram {
     mask: url("../../assets/icons/telegram.svg");
@@ -92,4 +102,12 @@
 
 .footer__caption {
   @extend %caption;
+  transition: color 0.3s ease-in;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+
+  &:hover {
+    color: variables.$color-primary;
+  }
 }

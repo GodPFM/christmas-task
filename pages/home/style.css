@@ -400,14 +400,18 @@ summary {
   gap: 12px;
   align-items: center;
   width: 32.7%;
+  text-decoration: none;
+  color: #181c29;
   padding: 20px;
   border-radius: 20px;
   background-color: #ECF3F8;
 }
+.footer__card:hover {
+  color: #ff4646;
+}
 
 .footer__card-link {
   text-decoration: none;
-  color: #181c29;
   margin: 0;
 }
 
@@ -432,7 +436,11 @@ summary {
 .footer__link-icon {
   width: 24px;
   height: 24px;
+  transition: background-color 0.3s ease-in;
   background-color: #181c29;
+}
+.footer__link-icon:hover {
+  background-color: #ff4646;
 }
 .footer__link-icon--telegram {
   mask: url("../../assets/icons/telegram.svg");
@@ -456,6 +464,16 @@ summary {
 
 .footer__copyrights {
   margin-bottom: 10px;
+}
+
+.footer__caption {
+  transition: color 0.3s ease-in;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+}
+.footer__caption:hover {
+  color: #ff4646;
 }
 
 .main {
