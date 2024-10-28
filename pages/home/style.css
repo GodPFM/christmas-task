@@ -212,7 +212,7 @@ summary {
   text-transform: uppercase;
 }
 
-.main__card-header-name {
+.footer__card-header, .main__card-header-name {
   font-family: "Monserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -232,12 +232,22 @@ summary {
   text-transform: uppercase;
 }
 
-.main__about-text {
+.main__about-text, .footer__copyrights {
   font-family: "Monserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 148%; /* 23.68px */
+}
+
+.footer__card-link {
+  font-family: "Monserrat", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 152%; /* 36.48px */
+  letter-spacing: 3.84px;
+  text-transform: uppercase;
 }
 
 .main__hero-link,
@@ -252,7 +262,7 @@ summary {
 }
 
 .main__hero-caption, .main__about-caption, .main__slider-caption,
-.main__gifts-caption, .main__cta-caption {
+.main__gifts-caption, .main__cta-caption, .footer__caption {
   font-family: "Allura", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -365,6 +375,87 @@ summary {
 
 .main__card-header-name {
   margin: 0;
+}
+
+.footer {
+  background-color: #fff;
+  padding-bottom: 41px;
+}
+
+.footer__wrapper {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.footer__cards-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 59px;
+}
+
+.footer__card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  width: 32.7%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ECF3F8;
+}
+
+.footer__card-link {
+  text-decoration: none;
+  color: #181c29;
+  margin: 0;
+}
+
+.footer__card-header {
+  margin: 0;
+}
+
+.footer__links-block {
+  display: flex;
+  max-width: 196px;
+  justify-content: space-between;
+  margin: 0 auto 13px;
+}
+
+.footer__link {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__link-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #181c29;
+}
+.footer__link-icon--telegram {
+  mask: url("../../assets/icons/telegram.svg");
+}
+.footer__link-icon--facebook {
+  mask: url("../../assets/icons/facebook.svg");
+}
+.footer__link-icon--instagram {
+  mask: url("../../assets/icons/instagram.svg");
+}
+.footer__link-icon--x {
+  mask: url("../../assets/icons/X.svg");
+}
+
+.footer__copyrights,
+.footer__caption {
+  text-align: center;
+  margin: 0;
+  color: #181c29;
+}
+
+.footer__copyrights {
+  margin-bottom: 10px;
 }
 
 .main {
@@ -603,7 +694,6 @@ summary {
 
 .main__cta-bg {
   background-image: url("../../assets/images/bg-forest.png");
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }

@@ -1,0 +1,95 @@
+@use './typography';
+@use './variables';
+
+.footer {
+  background-color: #fff;
+  padding-bottom: 41px;
+}
+
+.footer__wrapper {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.footer__cards-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 59px;
+}
+
+.footer__card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  width: 32.7%;
+
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ECF3F8;
+}
+
+.footer__card-link {
+  @extend %action-lg;
+  text-decoration: none;
+  color: variables.$color-dark;
+  margin: 0;
+}
+
+.footer__card-header {
+  @extend %header-3;
+  margin: 0;
+}
+
+.footer__links-block {
+  display: flex;
+  max-width: 196px;
+  justify-content: space-between;
+  margin: 0 auto 13px;
+}
+
+.footer__link {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__link-icon {
+  width: 24px;
+  height: 24px;
+  background-color: variables.$color-dark;
+
+  &--telegram {
+    mask: url("../../assets/icons/telegram.svg");
+  }
+
+  &--facebook {
+    mask: url("../../assets/icons/facebook.svg");
+  }
+
+  &--instagram {
+    mask: url("../../assets/icons/instagram.svg");
+  }
+
+  &--x {
+    mask: url("../../assets/icons/X.svg");
+  }
+}
+
+.footer__copyrights,
+.footer__caption {
+  text-align: center;
+  margin: 0;
+  color: variables.$color-dark;
+}
+
+.footer__copyrights {
+  @extend %paragraph;
+  margin-bottom: 10px;
+}
+
+.footer__caption {
+  @extend %caption;
+}

@@ -5,6 +5,7 @@
 @use '../../assets/styles/header';
 @use '../../assets/styles/fonts';
 @use '../../assets/styles/card';
+@use '../../assets/styles/footer';
 
 .main {
   background-color: variables.$color-primary;
@@ -276,7 +277,6 @@
 
 .main__cta-bg {
   background-image: url('../../assets/images/bg-forest.png');
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
