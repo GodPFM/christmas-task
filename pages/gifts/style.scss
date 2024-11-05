@@ -1,0 +1,58 @@
+@use '../../assets/styles/modern-normalize';
+@use '../../assets/styles/variables';
+@use '../../assets/styles/typography';
+@use '../../assets/styles/wrappers';
+@use '../../assets/styles/header';
+@use '../../assets/styles/fonts';
+@use '../../assets/styles/card';
+@use '../../assets/styles/footer';
+
+main {
+  background-color: variables.$color-primary;
+  border-radius: 20px;
+}
+
+.main__gifts-section {
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.main__gifts-balls {
+  width: 100%;
+
+}
+
+.main__gifts-header-block {
+  position: relative;
+  background-position: 0 0;
+  background-size: 100% auto;
+  background-image: url('../../assets/images/bg-garland.png');
+  background-repeat: no-repeat;
+}
+
+.main__gifts-header {
+  @extend %header-1;
+  color: variables.$color-static-white;
+  text-align: center;
+  max-width: 426px;
+  margin: 0 auto;
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+
+.main__gifts-tabs {
+  display: flex;
+  gap: 8px;
+  margin: 0 auto;
+  max-width: 474px;
+}
+
+.main__gifts-tab {
+  color: white;
+  background-color: variables.$color-static-white-20;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  white-space: nowrap;
+  @extend %action-sm;
+}

@@ -1,0 +1,451 @@
+/*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.15; /* 1. Correct the line height in all browsers. */
+  -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+  tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+}
+
+/*
+Sections
+========
+*/
+body {
+  margin: 0; /* Remove the margin in all browsers. */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct font weight in Chrome and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+Correct table border color inheritance in Chrome and Safari. (https://issues.chromium.org/issues/40615503, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  border-color: currentcolor;
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+@font-face {
+  font-family: "Monserrat";
+  src: url("../../assets/fonts/Monserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Monserrat";
+  src: url("../../assets/fonts/Monserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Allura";
+  src: url("../../assets/fonts/Allura/Allura-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+.main__gifts-header {
+  font-family: "Monserrat", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 48px */
+  letter-spacing: 5.76px;
+  text-transform: uppercase;
+}
+
+.footer__card-header {
+  font-family: "Monserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 152%; /* 24.32px */
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+}
+
+.footer__copyrights {
+  font-family: "Monserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 148%; /* 23.68px */
+}
+
+.footer__card-link {
+  font-family: "Monserrat", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 152%; /* 36.48px */
+  letter-spacing: 3.84px;
+  text-transform: uppercase;
+}
+
+.main__gifts-tab, .header__company-text, .header__nav-link {
+  font-family: "Monserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 15.6px */
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.footer__caption {
+  font-family: "Allura", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 24px */
+  letter-spacing: 1.2px;
+}
+
+.wrapper {
+  max-width: 1276px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__company-name {
+  text-decoration: none;
+  color: #181c29;
+  display: flex;
+  padding: 8px 20px;
+  align-items: center;
+}
+
+.header__company-logo {
+  width: 24px;
+  height: 24px;
+  background-image: url("/assets/images/snowflake.svg");
+  margin-right: 8px;
+}
+
+.header__nav-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.header__nav-item {
+  list-style: none;
+  margin-bottom: 3px;
+}
+
+.header__nav-link {
+  padding: 12px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #181c29;
+  transition: background-color 0.3s ease-in;
+}
+
+.header__nav-link:hover {
+  background: rgba(255, 70, 70, 0.1);
+}
+
+.footer {
+  background-color: #fff;
+  padding-bottom: 41px;
+}
+
+.footer__wrapper {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.footer__cards-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 59px;
+}
+
+.footer__card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  width: 32.7%;
+  text-decoration: none;
+  color: #181c29;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ECF3F8;
+}
+.footer__card:hover {
+  color: #ff4646;
+}
+
+.footer__card-link {
+  text-decoration: none;
+  margin: 0;
+}
+
+.footer__card-header {
+  margin: 0;
+}
+
+.footer__links-block {
+  display: flex;
+  max-width: 196px;
+  justify-content: space-between;
+  margin: 0 auto 13px;
+}
+
+.footer__link {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__link-icon {
+  width: 24px;
+  height: 24px;
+  transition: background-color 0.3s ease-in;
+  background-color: #181c29;
+}
+.footer__link-icon:hover {
+  background-color: #ff4646;
+}
+.footer__link-icon--telegram {
+  mask: url("../../assets/icons/telegram.svg");
+}
+.footer__link-icon--facebook {
+  mask: url("../../assets/icons/facebook.svg");
+}
+.footer__link-icon--instagram {
+  mask: url("../../assets/icons/instagram.svg");
+}
+.footer__link-icon--x {
+  mask: url("../../assets/icons/X.svg");
+}
+
+.footer__copyrights,
+.footer__caption {
+  text-align: center;
+  margin: 0;
+  color: #181c29;
+}
+
+.footer__copyrights {
+  margin-bottom: 10px;
+}
+
+.footer__caption {
+  transition: color 0.3s ease-in;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+}
+.footer__caption:hover {
+  color: #ff4646;
+}
+
+main {
+  background-color: #ff4646;
+  border-radius: 20px;
+}
+
+.main__gifts-section {
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.main__gifts-balls {
+  width: 100%;
+}
+
+.main__gifts-header-block {
+  position: relative;
+  background-position: 0 0;
+  background-size: 100% auto;
+  background-image: url("../../assets/images/bg-garland.png");
+  background-repeat: no-repeat;
+}
+
+.main__gifts-header {
+  color: #fff;
+  text-align: center;
+  max-width: 426px;
+  margin: 0 auto;
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+
+.main__gifts-tabs {
+  display: flex;
+  gap: 8px;
+  margin: 0 auto;
+  max-width: 474px;
+}
+
+.main__gifts-tab {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=style.css.map */
