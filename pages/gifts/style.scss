@@ -13,7 +13,6 @@ main {
 }
 
 .main__gifts-section {
-  padding-bottom: 60px;
   position: relative;
 }
 
@@ -43,7 +42,7 @@ main {
 .main__gifts-tabs {
   display: flex;
   gap: 8px;
-  margin: 0 auto;
+  margin: 0 auto 21px;
   max-width: 474px;
 }
 
@@ -55,4 +54,38 @@ main {
   padding: 12px 20px;
   white-space: nowrap;
   @extend %action-sm;
+}
+
+.main__cards-section {
+  padding-bottom: 60px;
+}
+
+.main__gifts-cards-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.main__gifts-card {
+  @extend %card__container;
+}
+
+.main__gifts-card-image-block {
+  @extend %card__image-block;
+}
+
+.main__gifts-card-image {
+  @extend %card__image;
+}
+
+.main__gifts-card-text-content {
+  @extend %card__text-content;
+}
+
+.main__card-header-purpose {
+  @extend %card__header-purpose;
+}
+
+.main__card-header-name {
+  @extend %card__header-name;
 }
